@@ -121,10 +121,17 @@ const ZuperChecklistTool = () => {
       formData.append('apiKey', config.apiKey);
       formData.append('region', config.region);
 
-      const response = await fetch('/api/extract-checklist', {
-        method: 'POST',
-        body: formData
-      });
+      // const response = await fetch('/api/extract-checklist', {
+      //   method: 'POST',
+      //   body: formData
+      // });
+                                              const response = await fetch(
+                                            `${import.meta.env.VITE_API_URL}/api/extract-checklist`,
+                                            {
+                                            method: 'POST',
+                                            body: formData,
+                                            }
+                                            );
 
       if (!response.ok) {
         const errorData = await response.json();
@@ -272,16 +279,31 @@ const ZuperChecklistTool = () => {
     try {
       const payload = generateZuperPayload();
       
-      const response = await fetch('/api/submit-checklist', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          checklist: checklist,
-          config: config
-        })
-      });
+      // const response = await fetch('/api/submit-checklist', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json'
+      //   },
+      //   body: JSON.stringify({
+      //     checklist: checklist,
+      //     config: config
+      //   })
+      // });
+
+                                                      const response = await fetch(
+                                                  `${import.meta.env.VITE_API_URL}/api/submit-checklist`,
+                                                  {
+                                                    method: 'POST',
+                                                    headers: {
+                                                      'Content-Type': 'application/json',
+                                                    },
+                                                    body: JSON.stringify({
+                                                      checklist: checklist,
+                                                      config: config,
+                                                    }),
+                                                  }
+                                                );
+
 
       if (!response.ok) {
         const errorData = await response.json();

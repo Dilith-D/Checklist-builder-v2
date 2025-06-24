@@ -19,7 +19,7 @@
     "ai",
     "backend"
   ],
-  "author": "Zuper Implementation Team",
+  "author": "Dilith Dinesh",
   "license": "ISC",
   "dependencies": {
     "@anthropic-ai/sdk": "^0.24.3",
