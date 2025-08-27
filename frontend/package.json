@@ -1,8 +1,7 @@
 {
-  "name": "zuper-checklist-frontend",
+  "name": "dilith-portfolio",
   "version": "1.0.0",
-  "description": "Zuper Checklist Import Tool - Frontend",
-  "main": "index.js",
+  "description": "Personal portfolio for Dilith Dinesh",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,10 +9,8 @@
     "start": "vite preview --port 3000"
   },
   "dependencies": {
-    "lucide-react": "^0.263.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-select": "^5.10.1"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
@@ -24,13 +21,6 @@
     "tailwindcss": "^3.3.3",
     "vite": "^4.4.5"
   },
-  "keywords": [
-    "zuper",
-    "checklist",
-    "excel",
-    "import",
-    "tool"
-  ],
-  "author": "Zuper Implementation Team",
+  "author": "Dilith Dinesh",
   "license": "MIT"
 }

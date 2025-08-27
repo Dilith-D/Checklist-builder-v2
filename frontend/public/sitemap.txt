@@ -1,0 +1,6 @@
+/
+/work
+/resume
+/writing
+/about
+/contact
